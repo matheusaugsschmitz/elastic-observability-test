@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  rabbitmq:
+    image: matheusaugusto/rabbitmq-delayed-message:3.8.0
+    container_name: RabbitMQ
+    hostname: rabbitmq
+    ports:
+      - 15672:15672
+      - 5672:5672
